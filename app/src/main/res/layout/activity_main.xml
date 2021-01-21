@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            app:toolbarId="@+id/toolbar">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/show_msg"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_weight="1"
+                android:background="#39FFEB3B"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal|top|fill_vertical"
+                android:text="@string/show_label_msg"
+                android:textColor="#03A9F4"
+                android:textSize="24sp"
+                tools:text="@string/show_label_msg" />
+
+            <TextView
+                android:id="@+id/show_hint"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:background="#39FFEB3B"
+                android:fontFamily="sans-serif-black"
+                android:gravity="top|center_horizontal"
+                android:text="@string/show_label_hint"
+                android:textColor="#2180F3"
+                android:textSize="30sp"
+                tools:text="@string/show_label_hint" />
+
+            <TextView
+                android:id="@+id/show_attempts_left"
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:layout_weight="1"
+                android:background="#39FFEB3B"
+                android:fontFamily="sans-serif-black"
+                android:gravity="top|center_horizontal"
+                android:text="@string/show_attempts_left"
+                android:textColor="#4CAF50"
+                android:textSize="30sp"
+                tools:text="@string/show_attempts_left" />
+
+            <EditText
+                android:id="@+id/edit_num"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:background="#27FFC107"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textColor="#4CAF50"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/btn_guess"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/btn_label_guess"
+                android:textColor="#673AB7"
+                android:textSize="24sp"
+                tools:text="@string/btn_label_guess" />
+
+            <Button
+                android:id="@+id/btn_restart"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#72DC39"
+                android:fontFamily="sans-serif-black"
+                android:onClick="restart"
+                android:text="@string/btn_label_restart"
+                android:textColor="#3F51B5"
+                android:textSize="24sp"
+                tools:text="@string/btn_label_restart" />
+
+
+        </android.widget.LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

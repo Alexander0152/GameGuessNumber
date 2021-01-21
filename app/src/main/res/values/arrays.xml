@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diaps_array">
+        <item>@string/_2</item>
+        <item>@string/_3</item>
+        <item>@string/_4</item>
+    </string-array>
+
+    <string name="_2">2-ухзначные</string>
+    <string name="_3">3-ёхзначные</string>
+    <string name="_4">4-ёхзначные</string>
+</resources>

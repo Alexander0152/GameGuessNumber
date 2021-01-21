@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/show_msg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:text="show_label_msg"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        tools:text="Отгадай!" />
+
+    <TextView
+        android:id="@+id/show_hint"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_weight="1"
+        android:text="show_label_hint"
+        android:textColor="#FFC107"
+        android:textSize="30sp"
+        tools:text="Задумано двузначное число." />
+
+    <EditText
+        android:id="@+id/edit_num"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:text="show_attempts_left"
+        android:textColor="#4CAF50"
+        android:textSize="36sp"
+        tools:text="5" />
+
+    <Button
+        android:id="@+id/btn_guess "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Отгадать"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        tools:text="Отгадать" />
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="restart"
+        android:text="btn_label_restart"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        tools:text="Заново" />
+
+</android.widget.LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Лаб4</string>
+    <string name="show_label_msg">Отгадай!</string>
+    <string name="show_label_hint">Задумано двузначное число.</string>
+    <string name="btn_label_guess">Отгадать</string>
+    <string name="show_attempts_left">5</string>
+    <string name="btn_label_restart">Заново</string>
+</resources>

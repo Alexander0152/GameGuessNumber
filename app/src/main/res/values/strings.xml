@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="show_label_msg">Отгадай!</string>
+    <string name="show_label_hint">Задумано двузначное число.</string>
+    <string name="btn_label_guess">Отгадать</string>
+    <string name="show_attempts_left">5</string>
+    <string name="btn_label_restart">Заново</string>
+    <string name="congratulation">Отгадано!</string>
+    <string name="you_lose">Вы проиграли!</string>
+    <string name="chooseDiapazon">Выберите диапазон чисел:</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="meniu_about_auther">Об авторе</string>
+    <string name="privetstvie_na_russkom">My name is Alexander</string>
+    <string name="hello">Hello</string>
+    <string name="changeColor">Изменить цвет</string>
+    <string name="changeFontSize">Изменить размер шрифта</string>
+</resources>
